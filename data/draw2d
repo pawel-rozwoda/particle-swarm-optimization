@@ -1,0 +1,1 @@
+cp 2dScripts/myOwnScript $1 && cd $1 && ./myOwnScript && ranger

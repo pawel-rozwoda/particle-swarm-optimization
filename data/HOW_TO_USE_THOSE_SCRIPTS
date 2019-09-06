@@ -1,0 +1,14 @@
+To be able to run scripts correctly, it is required to install gnuplot and ranger on linux.
+
+Program generates files and stores them in this directory.
+
+Directories with data will be generated and named by class names. I.e Drawings2d. or StepQuantityDependency.
+
+To prepare 2d images that shows every step of algorithm, run:
+./draw2d Drawings2d
+
+To prepare 2d charts that shows step quantity dependency, run:
+
+./drawCharts StepQuantityDependency
+This command will draw charts for every file in StepQuantityDependency directory. 
+

@@ -1,0 +1,1 @@
+cp chartScripts/script_chart $1 && cd $1 && ./script_chart && ranger

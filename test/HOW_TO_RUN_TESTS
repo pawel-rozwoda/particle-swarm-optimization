@@ -1,0 +1,5 @@
+To prepare tests, run make.
+To execute tests, run
+	./ctest     //it checks operations for Cartesian template class
+	./avstest   //checks AverageSolution template class
+	./ftest     //it tests some of Rosenbrock function values

@@ -1,0 +1,11 @@
+#!/bin/bash
+# My first script
+
+for f in *.dat ; # do xls2csv "$f" "${f%.xls}.csv" ; done
+do 
+	fn=\'"${f}"\';
+	#echo $fn;
+	gnuplot -e fn=${fn} ../2dScripts/stp;
+	#gnuplot -e fn=${fn} /home/yellow/data/stp;
+done
+

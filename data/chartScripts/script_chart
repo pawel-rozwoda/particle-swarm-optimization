@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for f in *.dat ; # do xls2csv "$f" "${f%.xls}.csv" ; done
+do 
+	fn=\'"${f}"\';
+	gnuplot -e fn=${fn} ../chartScripts/chart;
+	#gnuplot -e fn=${fn} /home/hjkl/data/chartScripts/chart;
+done
+

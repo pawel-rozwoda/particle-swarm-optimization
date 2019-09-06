@@ -1,0 +1,1 @@
+#define PATHTOPNG "../data/"

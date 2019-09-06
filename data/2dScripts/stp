@@ -1,0 +1,26 @@
+#!/usr/bin/env gnuplot
+
+reset
+
+
+
+#set view map
+#set terminal wxt size 400,400 a,10' persist
+set terminal pngcairo size 350,350
+set grid ytics lt 0 lw 1 lc rgb "#880000"
+set grid xtics lt 0 lw 1 lc rgb "#880000"
+xran=8
+yran=8
+
+
+String1=fn
+String2='.png'
+set output String1.String2
+set title String1
+
+set xr [-xran:xran]
+set yr [-yran:yran]
+
+plot fn pt 5, \
+     fn  using 1:2:($0+1) with labels offset 1 notitle
+

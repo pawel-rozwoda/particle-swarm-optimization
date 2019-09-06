@@ -1,0 +1,17 @@
+#!/usr/bin/env gnuplot
+
+#set view map
+#set terminal wxt size 400,400 a,10' persist
+set terminal pngcairo size 700,300
+#set grid ytics lt 0 lw 1 lc rgb "#880000"
+#set grid xtics lt 0 lw 1 lc rgb "#880000"
+#set yrange [0:2.2]
+
+String1=fn
+String2='.png'
+set output String1.String2
+set title String1
+set xlabel "ilość kroków"
+set ylabel "odległość"
+
+plot fn with lines
